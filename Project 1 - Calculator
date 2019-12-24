@@ -10,7 +10,7 @@ def calculator():
         print ("bye")
         run=False
     else:
-        equation = re.sub('[a-zA-Z,.:()+_" ";]', " ", equation) #voids everything that isn't a number
+        equation = re.sub('[a-zA-Z,.:()+_" ";]', " ", equation) #voids everything that isn't a number put into print to save lines
         if last ==0:
             a = eval(equation) 
             last = a
