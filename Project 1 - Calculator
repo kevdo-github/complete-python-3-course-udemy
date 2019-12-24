@@ -1,0 +1,23 @@
+import re
+run = True
+last = 0
+def calculator():
+    global run
+    global last
+    print("type quit to exit")
+    equation=input("type equation here ")
+    if equation =="quit": #
+        print ("bye")
+        run=False
+    else:
+        equation = re.sub('[a-zA-Z,.:()+_" ";]', " ", equation) #voids everything that isn't a number
+        if last ==0:
+            a = eval(equation) 
+            last = a
+            print("answer is: ", a)
+        else:
+            last = a
+            print(eval(str(last) + a))
+        
+while run:
+    calculator()
