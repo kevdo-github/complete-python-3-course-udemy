@@ -1,3 +1,5 @@
+#@author: kevin
+
 import re
 run = True
 last = 0
