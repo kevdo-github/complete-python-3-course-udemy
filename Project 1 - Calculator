@@ -6,6 +6,7 @@ last = 0
 def calculator():
     global run
     global last
+    global a
     print("type quit to exit")
     equation=input("type equation here ")
     if equation =="quit": #
